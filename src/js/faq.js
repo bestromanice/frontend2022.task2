@@ -1,12 +1,12 @@
 const buttons = document.querySelectorAll('.dt__btn')   // список всех dt__btn
 
-buttons.forEach((btn) => {                              // для каждой кнопки
-    let parentDT = btn.parentElement                    // находим родителя
-    let DD = parentDT.nextElementSibling                // затем соседа - искомый dd
-
-    let faqToggle = btn.lastElementChild                // для поворота стрелки
-    btn.addEventListener('click', () => {
-        DD.classList.toggle('faq__dd--opened')          // добавить класс, если его нет, иначе удалить
+buttons.forEach((btn) => { 
+    btn.addEventListener('click', (e) => {
+        const target = e.currentTarget
+        const parentDT = target.parentElement
+        const DD = parentDT.nextElementSibling
+        const faqToggle = target.lastElementChild
+        DD.classList.toggle('faq__dd--opened') 
         faqToggle.classList.toggle('faq__svg--down')
     })
 });
