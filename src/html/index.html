@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИКИТ СФУ</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="menu">
+        <div class="menu__content container">
+            <div class="menu__leading-content">
+                <img class="menu__logo" src="assets/images/logo.png" alt="logo">
+                <nav>
+                    <ul class="nav">
+                        <li class="nav__item nav__item--current"><a href="#">Главная</a></li>
+                        <li class="nav__item"><a href="#">Информация</a></li>
+                        <li class="nav__item"><a href="#">Новости</a></li>
+                        <li class="nav__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="menu__profile profile">
+                <p class="profile__name">Ваше имя</p>
+                <img class="profile__avatar" src="assets/images/avatar.svg" alt="avatar">
+            </div>
+        </div>
+    </header>
+    <section class="main container">
+        <header class="main__heading">
+            <h2 class="main__header">Личная страница</h2>
+        </header>
+        <section class="main__useful-info useful-info">
+            <header class="useful-info__heading">
+                <h3 class="useful-info__header">Полезная информация</h3>
+            </header>
+            <section class="useful-info__sidebar sidebar">
+                <form class="sidebar__search-form search-form">
+                    <input class="search-form__input" name="input" type="search" value="">
+                    <button class="search-form__btn" name="button" type="button">Поиск</button>
+                    
+                    <!-- сброс поиска -->
+                    <button id="resetButton" class="search-form__btn--small" name="button" type="reset"><img src="assets/images/reset.png" alt=""></button>
+                </form>
+                <h4 class="sidebar__header">Книги</h4>
+                <ul class="sidebar__items">
+                    <li class="sidebar__item">Список 1</li>
+                    <li class="sidebar__item">Список 2</li>
+                    <li class="sidebar__item">Список 3</li>
+                </ul>
+            </section>
+
+            <section class="useful-info__news news">
+                <h4 class="news__title">СФУ и Россий­ский универ­ситет спорта стали парт­нёрами</h4>
+                <section class="news__section">
+                    <h5 class="news__subtitle">Заголовок</h5>
+                    <p class="news__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </section>
+                <section class="news__section">
+                    <h5 class="news__subtitle">Заголовок</h5>
+                    <p class="news__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </section>
+            </section>
+        </section>
+
+        <section class="main__articles articles">
+            <header class="articles__heading">
+                <h3 class="articles__header">Интересные статьи</h3>
+                <div class="articles__select-view select-view">
+                    <button class="select-view__option btn-list">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.5 6H21.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.5 12H21.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.5 18H21.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.5 6H3.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.5 12H3.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.5 18H3.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+
+                    <button class="select-view__option btn-grid select-view--selected">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.5 3H3.5V10H10.5V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.5 3H14.5V10H21.5V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21.5 14H14.5V21H21.5V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.5 14H3.5V21H10.5V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                
+                    </button>
+                </div>
+                <p class="articles__description">Описать, о чем эти статьи, кратко</p>
+            </header>
+            
+            <article class="articles__article article">
+                <img class="article__image" src="assets/images/Image1.png" alt="imageOfArticle1">
+                <a class="article__link" href="#">
+                    <h4 class="article__header">Boost your conversion rate</h4>
+                </a>
+                <p class="article__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.
+                </p>
+                <div class="article__spacer-box"></div>
+                <header class="article__add-info">
+                    <p><time datetime="2020-03-16">Mar 16, 2020</time> · 6 min read</p>
+                </header>
+            </article>
+
+            <article class="articles__article article">
+                <img class="article__image" src="assets/images/Image2.png" alt="imageOfArticle2">
+                <a class="article__link" href="#">
+                    <h4 class="article__header">How to use search engine optimization to drive sales</h4>
+                </a>
+                <p class="article__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Velit facilis asperiores porro quaerat doloribus, eveniet dolore. 
+                    Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.
+                </p>
+                <div class="article__spacer-box"></div>
+                <header class="article__add-info">
+                    <p><time datetime="2020-03-10">Mar 10, 2020</time> · 4 min read</p>
+                </header>
+            </article>
+
+            <article class="articles__article article">
+                <img class="article__image" src="assets/images/Image3.png" alt="imageOfArticle3">
+                <a class="article__link" href="#">
+                    <h4 class="article__header">Improve your customer experience</h4>
+                </a>
+                <p class="article__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.
+                </p>
+                <div class="article__spacer-box"></div>
+                <header class="article__add-info">
+                    <p><time class="article__time" datetime="2020-02-12">Feb 12, 2020</time> · 11 min read</p>
+                </header>
+            </article>
+        </section>
+
+        <section class="main__add-article add-article">
+            <form class="add-article__form add-article__form--disabled">
+                <label class="add-article__label">Название статьи</label>
+                <input class="add-article__field add-article__name" type="text" name="articleName">
+                <label class="add-article__label">Ссылка на картинку</label>
+                <input class="add-article__field add-article__link" type="text" name="articleLink">
+                <label class="add-article__label">Описание</label>
+                <textarea class="add-article__field add-article__description" type="text" name="articleDescription"></textarea>
+                <button class="add-article__btn-cancel" name="button" type="button">Отмена</button>
+                <button class="add-article__btn-create" name="button" type="button">Создать</button>
+            </form>
+            <button class="add-article__btn-add">Добавить</btn>
+        </section>
+
+        <section class="main__faq faq">
+            <header class="faq__heading">
+                <h3 class="faq__header">FAQ</h3>
+            </header>
+            <dl class="faq__dl">
+                <dt class="faq__dt dt">
+                    <button class="dt__btn">
+                        <span>Название вопроса 1</span>
+                        <svg class="faq__svg faq__svg--down" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 19L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </dt>
+                <dd class="faq__dd faq__dd--opened">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Animi id quae voluptatem, illo perspiciatis, laborum, eveniet velit nulla sed quisquam expedita modi? 
+                    Explicabo quidem accusamus cum nostrum laborum ipsam quisquam.
+                </dd>
+
+                <dt class="faq__dt dt">
+                    <button class="dt__btn">
+                        <span>Название вопроса 2</span>
+                        <svg class="faq__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 19L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </dt>
+                <dd class="faq__dd">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Animi id quae voluptatem, illo perspiciatis, laborum, eveniet velit nulla sed quisquam expedita modi? 
+                    Explicabo quidem accusamus cum nostrum laborum ipsam quisquam.
+                </dd>
+
+                <dt class="faq__dt dt">
+                    <button class="dt__btn">
+                        <span>Название вопроса 3</span>
+                        <svg class="faq__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 19L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </dt>
+                <dd class="faq__dd">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Animi id quae voluptatem, illo perspiciatis, laborum, eveniet velit nulla sed quisquam expedita modi? 
+                    Explicabo quidem accusamus cum nostrum laborum ipsam quisquam.
+                </dd>
+            </dl>
+        </section>
+    </section>
+    <footer class="footer">
+        <div class="footer__content container">
+            <p class="footer__copyright">© 2022 Институт космических и информационных технологий СФУ</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
