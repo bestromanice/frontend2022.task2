@@ -55,7 +55,7 @@
         flex-wrap: wrap;
     }
 
-    li {
+    &__item {
         margin-left: 20px;
         margin-right: 20px;
 
@@ -74,21 +74,15 @@
             margin-right: 15px;
         }
 
-        a {
-            color: #D1D5DB;
-        }
+        color: #D1D5DB;
 
         &:hover {
             background-color: #D1D5DB;
             transition: 0.2s ease;
+            color: #1F2937;
 
-            a {
-                color: #1F2937;;
-            }
         }
-    }
-
-    &__item {
+        
         padding: 7px 9px;
         border-radius: 8px;
 
